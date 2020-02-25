@@ -9,8 +9,6 @@
         slideItems = slider.querySelectorAll(".sp-slider__item"),
         ACTIVE_CLASS_SLIDER = 'sp-slider__item--active';
 
-    let slideItemsView = [...slideItems];
-
     //события на кнопки переключения слайдов
     btnNext.addEventListener('click', handlerBtnNext);
     btnPrev.addEventListener('click', handlerBtnNext);
@@ -18,8 +16,8 @@
     //callback событий кнопок переключения
     function handlerBtnNext(e) {
 
-        (this.dataset.way === "next") ? toggleSlide(slideItemsView) :
-            (this.dataset.way === "prev") ? toggleSlide(slideItemsView.reverse()) : '';
+        (this.dataset.way === "next") ? toggleSlide([...slideItems]) :
+            (this.dataset.way === "prev") ? toggleSlide([...slideItems].reverse()) : '';
     }
 
     //переключение слайдов
@@ -57,9 +55,8 @@
 
             e.stopPropagation();
 
-            slideItemsView = [...slideItems].filter(element => element.querySelector('img').dataset.color === this.dataset.color)
             //узнаем индекс первой фото с соотв цветом
-            let index = [...slideItemsView].findIndex(element => element.dataset.color === this.dataset.color);
+            let index = [...images].findIndex(element => element.dataset.color === this.dataset.color);
 
             (index === -1) ?
                 viewTooltipWithWrong.call(this) :
@@ -83,7 +80,7 @@
 
             this.classList.add(ACTIVE_CLASS_COLOR);
 
-            slideItemsView.forEach(item => {
+            slideItems.forEach(item => {
 
                 item.classList.remove('sp-slider__item--active');
             })
