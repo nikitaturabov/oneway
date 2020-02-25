@@ -1,0 +1,72 @@
+.sp-colors {
+
+    &__title {
+
+        font-size: 12px;
+        line-height: 24px;
+
+        opacity: .5;
+    }
+
+    &__items {
+
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__item {
+
+        border: 1px solid #979797;
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+
+        cursor: pointer;
+
+        position: relative;
+
+        &--active {
+
+            border: 6px solid #000;
+        }
+
+        &[data-color="pink"] {
+
+            background: #FF7F96;
+        }
+
+        &[data-color="purpure"] {
+
+            background: #F7A9F8;
+        }
+
+        &[data-color="green"] {
+
+            background: #3DFFBA;
+        }
+
+        &--error {
+
+            &:after{
+
+                content: "Данный товар закончился";
+
+                display: inline-block;
+                padding: 5px 15px;
+                background: #fff;
+                color: #FF7F96;
+                font-size: 12px;
+
+                width: 200px;
+                border-radius: 10px;
+                border: 1px solid #FF7F96;
+
+                transform: translate(-50%, 50%);
+
+                position: absolute;
+                top: 19px;
+                left: 0;
+            }
+        }
+    }
+}
