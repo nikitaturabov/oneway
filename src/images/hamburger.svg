@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="14px" viewBox="0 0 24 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="s-item" transform="translate(-272.000000, -39.000000)" fill="#000000">
+            <g id="Group-6-Copy" transform="translate(24.000000, 32.000000)">
+                <path d="M248,7 L272,7 L272,9 L248,9 L248,7 Z M248,19 L272,19 L272,21 L248,21 L248,19 Z" id="menu"></path>
+            </g>
+        </g>
+    </g>
+</svg>

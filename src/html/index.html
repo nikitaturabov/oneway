@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>start</title>
+
+	<link href="../css/style.min.css" rel="stylesheet" />
+	<link href="../css/sprite.css" rel="stylesheet" />
+
+</head>
+
+<body class="soup-page">
+
+	<header class="soup-page__header sp-header">
+
+
+		<a href="/" class="sp-header__link-logo">
+
+			<svg class="sp-header__logo">
+
+				<use xlink:href="/stack/sprite.svg#logo"></use>
+
+			</svg>
+		</a>
+
+		<nav class="sp-header__nav sp-nav">
+
+			<ul class="sp-nav__list">
+
+				<li class="sp-nav__item">Мыло</li>
+
+				<li class="sp-nav__item sp-nav__item--submenu">Рубашки
+
+					<ul class="sp-nav__category sp-category">
+
+						<li class="sp-category__item">Длинный рукав</li>
+
+						<li class="sp-category__item">Короткий рукав</li>
+
+					</ul>
+
+				</li>
+
+				<li class="sp-nav__item">Жир</li>
+
+			</ul>
+
+		</nav>
+
+		<a href="tel:8 800 990-34-43" class="sp-header__phone"> 8 800 990-34-43 </a>
+	</header>
+
+	<main class="soup-page__product sp-product">
+
+		<div class="sp-product__left-col sp-slider">
+
+			<ul class="sp-slider__list">
+
+				<li class="sp-slider__item sp-slider__item--active">
+
+					<img src="../img/item-1-1.png" alt="" class="sp-slider__img" data-color="purpure">
+
+				</li>
+
+				<li class="sp-slider__item">
+
+					<img src="../img/item-1-2.png" alt="" class="sp-slider__img" data-color="purpure">
+
+				</li>
+
+				<li class="sp-slider__item">
+
+					<img src="../img/item-2-1.png" alt="" class="sp-slider__img" data-color="pink">
+
+				</li>
+
+				<li class="sp-slider__item">
+
+					<img src="../img/item-2-2.png" alt="" class="sp-slider__img" data-color="pink">
+
+				</li>
+
+			</ul>
+
+			<div class="sp-slider__navi-btns">
+
+				<button class="sp-slider__navi-btn sp-slider__navi-btn--prev" data-way="prev">
+
+					<svg class="sp-slider__icon-arrow-prev">
+						<use xlink:href="../stack/sprite.svg#arrow-left"></use>
+					</svg>
+
+				</button>
+
+				<button class="sp-slider__navi-btn sp-slider__navi-btn--next" data-way="next">
+
+					<svg class="sp-slider__icon-arrow-next">
+						<use xlink:href="../stack/sprite.svg#arrow-right"></use>
+					</svg>
+
+				</button>
+
+			</div>
+
+		</div>
+
+		<div class="sp-product__right-col sp-product-story">
+
+			<h1 class="sp-product-story__title">Мыло FIGHT CLUB</h1>
+
+			<span class="sp-product-story__detail">
+
+				Мыло розовое, душистое. Отличное качество (секретный ингридиент).
+
+			</span>
+
+			<span class="sp-product-story__price">13 890 ₽</span>
+
+			<div class="sp-product-story__color-choice sp-colors">
+
+				<span class="sp-colors__title">цвет</span>
+
+				<ul class="sp-colors__items">
+
+					<li class="sp-colors__item" data-color="pink"></li>
+
+					<li class="sp-colors__item" data-color="purpure"></li>
+
+					<li class="sp-colors__item" data-color="green"></li>
+
+				</ul>
+
+			</div>
+
+			<button class="sp-product-story__btn sp-btn sp-btn--add-to-basket">Добавить в корзину</button>
+
+			<div class="sp-product-story__detail-description sp-detail-description">
+
+				<div class="sp-detail-description__tabs">
+
+					<div class="sp-detail-description__tab sp-detail-description__tab--active"
+						data-tab-name="sp-description">Описание</div>
+
+					<div class="sp-detail-description__tab" data-tab-name="sp-specifications">Характеристики</div>
+
+				</div>
+
+				<div class="sp-detail-description__content-list">
+
+					<div
+						class="sp-detail-description__content sp-description sp-detail-description__content--active sp-detail-description__content--semi-hidden">
+
+						<div class="sp-detail-description__content-wrapper">
+							Масло
+							Макадимии смягчает, увлажняет, обладает
+							антиоксидантными, антибактериальными , восстанавливающими свойствами , ускоряет заживление,
+							снимает
+							болевые ощущения в суставах. Натуральный ментол охладит и снимет усталость после долгой
+							тренировки.
+							Подойдет для всех типов кожи.
+
+						</div>
+
+						<button class="sp-detail-description__btn-opening">Показать больше</button>
+
+					</div>
+
+					<div class="sp-detail-description__content sp-specifications">
+
+						<div class="sp-detail-description__content-wrapper">
+
+							<table>
+								<tr>
+									<td>Артикул</td>
+									<td>H7S3N-9301</td>
+								</tr>
+								<tr>
+									<td>Матреиал</td>
+									<td>текстиль, резина</td>
+								</tr>
+								<tr>
+									<td>Страна</td>
+									<td>Индонезия</td>
+								</tr>
+							</table>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer class="soup-page__footer sp-footer">
+
+		<address class="sp-footer__author">© ООО «Соуп»</address>
+
+		<nav class="sp-footer__nav sp-nav">
+
+			<ul class="sp-nav__list">
+
+				<li class="sp-nav__item">Мыло</li>
+
+				<li class="sp-nav__item">Рубашки</li>
+
+				<li class="sp-nav__item">Жир</li>
+
+			</ul>
+
+		</nav>
+
+
+		<form method="POST" action="http://localhost:3004/emails" class="sp-footer__subscription-form sp-subscribe">
+
+			<span class="sp-subscribe__title">Подписка на рассылку</span>
+
+			<input class="sp-subscribe__email-input" type="email" name="email" placeholder="Ваш e-mail" required>
+
+			<button class="sp-subscribe__btn-submit" type="submit">Отправить</button>
+
+		</form>
+
+	</footer>
+
+</body>
+
+<script src="../js/scripts.min.js"></script>
+
+</html>

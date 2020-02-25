@@ -1,0 +1,53 @@
+.sp-nav {
+
+    &__list {
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+
+        padding: 5px 20px;
+        cursor: pointer;
+
+        position: relative;
+
+
+        &--submenu {
+
+            &:after {
+
+                content: "";
+        
+                display: inline-block;
+        
+                background: url(../stack/sprite.svg#angle-down);
+                width: 8px;
+                height: 5px;
+        
+                transform: translate(50%, -50%);
+        
+                position: absolute;
+                top: 55%;
+                right: 13px;
+            }
+        }
+    }
+
+    &__category {
+    
+        display: none;
+
+        position: absolute;
+        top: 28px;
+
+        &--opened {
+
+            display: flex;
+
+            flex-direction: column;
+        }
+    }
+
+}
