@@ -4,6 +4,21 @@
 
         display: flex;
         align-items: center;
+
+        margin-left: -7px;
+        
+        .sp-header__nav & {
+
+            @media @tablet {
+
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+    
+                height: 80vh;
+            }
+        }
     }
 
     &__item {
@@ -12,7 +27,6 @@
         cursor: pointer;
 
         position: relative;
-
 
         &--submenu {
 
@@ -29,8 +43,9 @@
                 transform: translate(50%, -50%);
         
                 position: absolute;
-                top: 55%;
-                right: 13px;
+                top: 58%;
+                right: 9px;
+            
             }
         }
     }
@@ -42,11 +57,21 @@
         position: absolute;
         top: 28px;
 
+        z-index: 5;
+
         &--opened {
 
             display: flex;
 
             flex-direction: column;
+        }
+
+        @media  @tablet {
+            
+            top: -15px;
+            left: 57%;
+            z-index: 5;
+            transform: translate(-50%,50%);
         }
     }
 

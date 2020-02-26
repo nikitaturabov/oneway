@@ -3,15 +3,18 @@
     &__tabs {
 
         display: flex;
-        
 
         border-bottom: 1px solid #D8D8D8;
     }
 
     &__tab {
 
+        font-family: "Mono", sans-serif;
+
         margin-right: 32px;
-        padding: 10px 0;
+        padding: 11px 0;
+
+        font-size: 14px;
 
         position: relative;
         cursor: pointer;
@@ -50,9 +53,15 @@
 
     &__content-wrapper {
 
+        font-family: "CaptionRegular";
+
         position: relative;
 
-        width: 368px;
+        max-width: 368px;
+
+        font-size: 17px;
+        letter-spacing: 0.04em;
+        line-height: 30px;
     }
 
     &__content {
@@ -74,7 +83,7 @@
 
         &--semi-hidden {
 
-            height: 224px;
+            height: 222px;
             overflow: hidden;
 
             position: relative;
@@ -87,12 +96,24 @@
         bottom: 0;
         width: 100%;
 
-        padding: 30px 0 73px;
+        padding: 30px 0 60px;
+
+        font-size: 12px;
 
         box-shadow: -6px -15px 25px rgba(255, 255, 255, 1);
 
         text-align: left;
 
+        background: #fff;
+
         cursor: pointer;
+
+        &:after {
+
+            content: "↓";
+
+            vertical-align: baseline;
+            margin-left: 6px;
+        }
     }
 }

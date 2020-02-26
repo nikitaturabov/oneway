@@ -1,4 +1,58 @@
 .sp-footer {
 
-    
+    &__author {
+
+        font-family: "CaptionRegular", sans-serif;
+
+        font-size: 14px;
+        line-height: 30px;
+
+        font-style: normal;
+
+        letter-spacing: 0.05em;
+
+        white-space: nowrap;
+    }
+
+    &__nav {
+
+        flex: .795;
+
+        @media @narrowScreen {
+
+            flex: 0.875;
+        }
+
+        @media  @tablet {
+
+            margin-top: 24px;
+
+            margin-left: -13px;
+        }
+    }
+
+    &__subscription-form {
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+
+        flex-wrap: nowrap;
+
+        @media @narrowScreen {
+
+            flex: 1; 
+
+            margin: 14px 93px 0 0;
+         }
+        
+        @media @tablet {
+
+            margin-top: 20px;
+
+            justify-self: flex-end;
+
+            flex-wrap: wrap;
+        }
+    }
 }

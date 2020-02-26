@@ -15,12 +15,18 @@
 
         cursor: pointer;
 
+        &:disabled,
         &:hover {
 
             background: #FFEBEF;
             color: #FF7F96;
 
             transition: all .5s;
+        }
+
+        &:disabled {
+
+            cursor: default;
         }
     }
 }

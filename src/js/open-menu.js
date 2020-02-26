@@ -6,14 +6,18 @@
 
     const category = navBar.querySelector('.sp-nav__category');
 
-    navBar.addEventListener("click", clickNavItemHandler);
+    document.addEventListener("click", clickNavItemHandler);
 
 
     function clickNavItemHandler(e) {
 
-        if (e.target.classList.contains("sp-nav__item--submenu") && e.target.querySelector('.sp-nav__category')) {
+        if (e.target.classList.contains("sp-nav__item--submenu") || e.target.closest('.sp-nav__category')) {
 
             category.classList.toggle("sp-nav__category--opened");
+        }
+        else {
+
+            category.classList.remove("sp-nav__category--opened");
         }
     }
 

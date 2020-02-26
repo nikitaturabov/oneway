@@ -1,5 +1,90 @@
 .sp-header {
 
+    &__logo {
+
+        width: 160px;
+        height: 32px;
+    }
+
+    &__nav {
+
+        margin-left: 20px;
+        margin-top: 3px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 60%;
+
+        transition: all 0.3s;
+
+        @media @narrowScreen {
+            
+            width: 67%;
+        }
+
+        @media @tablet {
+            
+            width: 70%;
+
+            display: none;
+
+            position: fixed;
+            width: inherit;
+            top: 83px;
+            left: 24px;
+            right: 24px;
+            bottom: 0;
+            background: #fff;
+     
+            bottom: 0;
+            z-index: 11;
+            border-top: 1px solid #d8d8d8;
+            margin: inherit;
+
+            &--active {
+
+                display: block;
+            }
+        }
+    }
+
+    &__btn-burger{
+
+        display: none;
+
+        cursor: pointer;
+
+        outline: none;
+        background: none;
+        border: none;
+
+        width: 24px;
+        height: 24px;
+
+        background: url('../stack/sprite.svg#hamburger') no-repeat;
+
+        &--close {
+
+            width: 18px;
+            height: 18px;
+
+            background: url('../stack/sprite.svg#close') no-repeat;
+        }
+
+        @media  @tablet { 
+
+            display: block;
+        }
+    }
+
+    &__burger-icon {
+
+        width: 24px;
+        height: 14px;
+    }
+
     &__list {
 
         display: flex;
@@ -9,9 +94,17 @@
     &__phone {
 
         color: #000;
+        font-size: 20px;
+        white-space: nowrap;
 
         &:target {
             color: #000;
+        }
+
+        @media  @tablet {
+
+            display: flex;
+            justify-content: center;
         }
     }
 }

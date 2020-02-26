@@ -7,8 +7,10 @@
     const btnPrev = slider.querySelector(".sp-slider__navi-btn--prev"),
         btnNext = slider.querySelector(".sp-slider__navi-btn--next"),
         slideItems = slider.querySelectorAll(".sp-slider__item"),
+        btnAddToBasket = document.querySelector('.sp-btn--add-to-basket'),
         ACTIVE_CLASS_SLIDER = 'sp-slider__item--active';
 
+    let slideItemsAvailable = [...slideItems];
     //события на кнопки переключения слайдов
     btnNext.addEventListener('click', handlerBtnNext);
     btnPrev.addEventListener('click', handlerBtnNext);
@@ -16,8 +18,8 @@
     //callback событий кнопок переключения
     function handlerBtnNext(e) {
 
-        (this.dataset.way === "next") ? toggleSlide([...slideItems]) :
-            (this.dataset.way === "prev") ? toggleSlide([...slideItems].reverse()) : '';
+        (this.dataset.way === "next") ? toggleSlide(slideItemsAvailable) :
+            (this.dataset.way === "prev") ? toggleSlide(slideItemsAvailable.reverse()) : '';
     }
 
     //переключение слайдов
@@ -30,7 +32,6 @@
             arrayPhoto[index + 1].classList.add(ACTIVE_CLASS_SLIDER) :
             arrayPhoto[0].classList.add(ACTIVE_CLASS_SLIDER);
     }
-
 
     (function (colorChoice) {
 
@@ -73,6 +74,9 @@
         //выделяем нужный цвет черной рамкой и показываем в слайдере первое фото, соответсв цвету
         function setActiveColor(index) {
 
+            //фильтруем картинки в слайдере, чтобы показывались только нужного цвета
+            slideItemsAvailable = [...slideItems].filter(item => item.querySelector(".sp-slider__img").dataset.color === this.dataset.color);
+
             [...colorBtns].forEach(btn => {
 
                 btn.classList.remove(ACTIVE_CLASS_COLOR, ERROR_CLASS)
@@ -86,6 +90,8 @@
             })
 
             images[index].parentNode.classList.add('sp-slider__item--active');
+
+            btnAddToBasket.disabled = true;
         }
 
     })(document.querySelector('.sp-colors'))

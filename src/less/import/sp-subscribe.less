@@ -3,19 +3,58 @@
     &__title {
 
         font-family: "Caption", sans-serif;
+
+        font-size: 15px;
+        margin-right: 14px;
+
+        white-space: nowrap;
+
+        @media  @tablet {
+
+            flex: 1;
+        }
+    }
+
+    &__line-wrapper {
+
+        white-space: nowrap;
+
+        @media  @tablet {
+
+            margin-top: 12px;
+
+            white-space: nowrap;
+            flex: 1;
+        }
     }
 
     &__email-input {
+
+        font-family: "Caption", sans-serif;
 
         border: none;
         outline: none;
         border-bottom: 1px solid #D8D8D8;
 
-        padding: 5px;
+        padding: 4px 0;
+        margin: 0 9px;
+
+        font-size: 14px;
+        line-height: 24px;
+
+        width: 159px;
+
+        @media  @tablet {
+            
+            margin-left: 0;
+        }
     }
 
     &__btn-submit {
 
         font-weight: bold;
+        padding: 0;
+
+        background: none;
     }
 }

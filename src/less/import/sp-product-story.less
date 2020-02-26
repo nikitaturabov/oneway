@@ -8,9 +8,13 @@
 
     &__detail {
 
-        margin-top: 24px;
+        font-family: "CaptionRegular", sans-serif;
 
-        font-size: 18px;
+        margin-top: 22px;
+
+        letter-spacing: .02em;
+        font-size: 20px;
+
         line-height: 32px;
         
         display: block;
@@ -18,7 +22,7 @@
 
     &__price {
 
-        margin-top: 24px;
+        margin-top: 27px;
 
         font-weight: bold;
         font-size: 28px;
@@ -29,13 +33,18 @@
 
     &__color-choice {
 
-        margin-top: 33px;
+        margin-top: 31px;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        max-width: 200px;
+        max-width: 244px;
+
+        @media @narrowScreen {
+            
+            max-width: 221px;
+        }
     }
 
     &__btn {
@@ -45,6 +54,6 @@
 
     &__detail-description {
 
-        margin-top: 40px;
+        margin-top: 34px;
     }
 }
