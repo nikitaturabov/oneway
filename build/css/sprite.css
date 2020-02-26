@@ -1,0 +1,72 @@
+.svg-angle-down {
+	background: url("svg/sprite.css-d83afcbb.svg") 57.89473684210526% 55.172413793103445% no-repeat;
+}
+
+.svg-angle-down-dims {
+	width: 8px;
+	height: 6px;
+}
+
+.svg-arrow-left {
+	background: url("svg/sprite.css-d83afcbb.svg") 53.94736842105263% 95.83333333333333% no-repeat;
+}
+
+.svg-arrow-left-dims {
+	width: 8px;
+	height: 16px;
+}
+
+.svg-arrow-right {
+	background: url("svg/sprite.css-d83afcbb.svg") 59.21052631578947% 95.83333333333333% no-repeat;
+}
+
+.svg-arrow-right-dims {
+	width: 8px;
+	height: 16px;
+}
+
+.svg-close {
+	background: url("svg/sprite.css-d83afcbb.svg") 45.070422535211264% 100% no-repeat;
+}
+
+.svg-close-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-color-1 {
+	background: url("svg/sprite.css-d83afcbb.svg") 0 100% no-repeat;
+}
+
+.svg-color-1-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-color-2 {
+	background: url("svg/sprite.css-d83afcbb.svg") 25% 100% no-repeat;
+}
+
+.svg-color-2-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-hamburger {
+	background: url("svg/sprite.css-d83afcbb.svg") 47.05882352941177% 64% no-repeat;
+}
+
+.svg-hamburger-dims {
+	width: 24px;
+	height: 14px;
+}
+
+.svg-logo {
+	background: url("svg/sprite.css-d83afcbb.svg") 0 0 no-repeat;
+}
+
+.svg-logo-dims {
+	width: 160px;
+	height: 32px;
+}
+
