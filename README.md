@@ -11,4 +11,5 @@ knowledge test for OneWay
 # Чтобы запустить проект
 1. `npm i` - установка пакетов
 1. `gulp serve` - запуск проекта с тестовым заданием с помощью gulp 
+1. `npm i json-server`
 1. `json-server --watch db.json --port 3004` - запуск проекта jsonplaceholder для отслеживания запросов, в данном случае в файле (https://github.com/nikitaturabov/oneway/tree/master/public)
