@@ -17,6 +17,7 @@ const filter = require("gulp-filter");
 const debug = require("gulp-debug");
 const svgSprite = require("gulp-svg-sprite");
 const imagemin = require("gulp-imagemin");
+const replace = require('gulp-replace');
 const gulpFont = require('gulp-font');
 
 //Сборка less файлов в один css, минификация, перемещение media вниз файла
@@ -89,6 +90,7 @@ gulp.task("svgSprite", function () {
 				}
 			})
 		)
+		.pipe(replace(/viewBox=(".*?")/, ''))
 		.pipe(gulp.dest("./build"));
 });
 
@@ -121,8 +123,6 @@ gulp.task("serve", function () {
 		}
 	});
 
-
-
 	gulp
 		.watch(["src/less/*.less", "src/less/import/*.less", "src/less/features/*.less"], gulp.series("clear-css", "less"))
 		.on("change", reload);
@@ -140,4 +140,10 @@ gulp.task("serve", function () {
 	gulp
 		.watch(["src/img/*.png"], gulp.series("optimizationPNG"))
 		.on("change", reload);
+
+
+	gulp.series(
+		gulp.parallel('less', 'js', 'fonts'),
+		'html',
+		'svgSprite');
 });
