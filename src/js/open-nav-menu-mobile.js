@@ -7,6 +7,7 @@
 
     const headerNav = document.querySelector('.sp-header__nav');
 
+    //меню мобилка
     btn.addEventListener("click", function (e) {
 
         headerNav.classList.toggle('sp-header__nav--active');
@@ -20,8 +21,6 @@
 
             document.body.style.overflow = 'auto';
         }
-
-
     })
 
 })(document.querySelector('.sp-header__btn-burger'))

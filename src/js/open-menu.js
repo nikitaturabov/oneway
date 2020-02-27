@@ -8,7 +8,7 @@
 
     document.addEventListener("click", clickNavItemHandler);
 
-
+    //открываем подменю в шапке
     function clickNavItemHandler(e) {
 
         if (e.target.classList.contains("sp-nav__item--submenu") || e.target.closest('.sp-nav__category')) {

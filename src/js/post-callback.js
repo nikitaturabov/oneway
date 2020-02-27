@@ -4,6 +4,7 @@
         return;
     }
 
+    //отправляем данные из формы
     subscribe.addEventListener("submit", (e) => {
 
         e.preventDefault()
